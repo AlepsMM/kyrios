@@ -1,0 +1,3 @@
+[submodule "kyrios/chat-realtime"]
+	path = kyrios/chat-realtime
+	url = https://git.heroku.com/matrix-chat6.git
