@@ -29,11 +29,12 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Casa</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Oraciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./chat-realtime/public/index.html">Chat en vivo</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Portafolio General</a></li>
+                                <li><a class="dropdown-item" href="portfolio-item.html">Portafolio Actividades</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -64,21 +65,21 @@
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                     <label for="name">Nombre de la persona que necesita oracion.</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">Es necesario que ingreses un nombre.</div>
                                 </div>
 
 
                                 <!-- Phone number input-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="phone" type="text" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                    <label for="phone">Parentezco. Ejemplo (Madre, Padre, Hermano)</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                    <input class="form-control" id="text" type="text" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                    <label for="text">Parentezco. Ejemplo (Madre, Padre, Hermano)</label>
+                                    <div class="invalid-feedback" data-sb-feedback="text:required">Es necesario que ingreses el parentezco.</div>
                                 </div>
                                 <!-- Message input-->
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                     <label for="message">Situacion/Enfermedad</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">Es necesario que ingreses una situacion.</div>
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
