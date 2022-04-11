@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat en vivo</title>
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="./assets/matrix_chat_logo.png" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <p id="title">CHAT KYRIOS</p>
+    <center>
+        <img src="../../assets/logo.jpg" width="100" height="100"></center>
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="actions"></div>
+        </div>
+        <input type="text" id="username" placeholder="Escriba su nombre de usuario">
+        <input type="text" id="message" placeholder="Escriba su mensaje">
+        <button id="send">Enviar</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="chat.js" charset="utf-8"></script>
+</body>
+
+</html>
