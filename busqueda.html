@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <!-- Logo -->
+   <link rel="icon" type="image/png" href="img/cross2.png" />
+<style>
+body{
+    text-align: center;
+    background: #e8eceb;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+ #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+    <h1>Busqueda'23</h1>
+    <video src="./img/busqueda23.mp4" autoplay controls>
+    </video>
+<h1>Cuenta Regresiva</h1>
+<div id="clockdiv">
+  <div>
+    <span class="days" id="day"></span>
+    <div class="smalltext">Dias</div>
+  </div>
+  <div>
+    <span class="hours" id="hour"></span>
+    <div class="smalltext">Horas</div>
+  </div>
+  <div>
+    <span class="minutes" id="minute"></span>
+    <div class="smalltext">Minutos</div>
+  </div>
+  <div>
+    <span class="seconds" id="second"></span>
+    <div class="smalltext">Segundos</div>
+  </div>
+</div>
+  
+<p id="demo"></p>
+  
+<script>
+  
+var deadline = new Date("apr 03, 2023 00:00:00").getTime();
+  
+var x = setInterval(function() {
+  
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("day").innerHTML =days ;
+document.getElementById("hour").innerHTML =hours;
+document.getElementById("minute").innerHTML = minutes; 
+document.getElementById("second").innerHTML =seconds; 
+if (t < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "TIME UP";
+        document.getElementById("day").innerHTML ='0';
+        document.getElementById("hour").innerHTML ='0';
+        document.getElementById("minute").innerHTML ='0' ; 
+        document.getElementById("second").innerHTML = '0'; }
+}, 1000);
+</script>
+<div class="d-grid gap-2 col-6 mx-auto">
+<a  class="btn btn-primary btn-lg" href="./index.html" role="button" href="/index.html">Atras</a>
+</div>
+</body>
+</html>
